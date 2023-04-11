@@ -18,11 +18,11 @@ const Die = (props) => {
         onClick = {props.holdDice}
     >
        <div className = {
-        value.length == 5 ? "dot5":
-        value.length == 4 ? "dot4":
-        value.length == 3 ? "dot3":
-        value.length == 2 ? "dot2": 
-        value.length == 1 ?"dot1" :
+        value.length === 5 ? "dot5":
+        value.length === 4 ? "dot4":
+        value.length === 3 ? "dot3":
+        value.length === 2 ? "dot2": 
+        value.length === 1 ?"dot1" :
         "die-num" 
         }> 
           {die}

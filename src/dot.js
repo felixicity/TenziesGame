@@ -3,7 +3,7 @@ import './tenzies.css'
 
 const Dot = (props) => {
   return (
-    <div className= {props.className == "five" ? "dot five" : "dot"}>
+    <div className= {props.className === "five" ? "dot five" : "dot"}>
       
     </div>
   )
