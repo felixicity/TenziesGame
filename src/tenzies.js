@@ -75,7 +75,7 @@
             setTimeSeconds(prevTime => prevTime + 1 )
         }, 1000)
         return () => clearInterval(intervalId)
-    }, [])
+    })
 
     if(timeSeconds > 59) {
         setTimeMinutes(prev => prev + 1) 
@@ -96,6 +96,7 @@
         setTimeMinutes(0)
         setTimeSeconds(0)
     }
+    //eslint-disable-next-line
     },[newdice])
 
    
